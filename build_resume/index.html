@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Resume</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <div class="leftnav">
+                <a href="../Index.html">
+                    <h2><span class="HeaderResume">Resume</span>Builder</h2>
+                </a>
+            </div>
+            <div class="rightnav">
+                <h3 class="firsttext">Candidate Info</h3>
+                <h3 class="secondtext">Resume Preview</h3>
+            </div>
+        </nav>
+        <!-- main -->
+        <main>
+            <div class="main_left">
+
+                <section class="about-section">
+                    <h2>About Me</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="middle-name">Middle Name:</label>
+                            <input type="text" id="middle-name" placeholder="Middle Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="upload-image">Upload Image:</label>
+                            <input type="file" id="upload-image" accept="image/*" placeholder="Upload Image">
+                        </div>
+                        <div class="form-group">
+                            <label for="designation">Designation:</label>
+                            <input type="text" id="designation" placeholder="Designation">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="summary">Summary:</label>
+                            <textarea id="summary" placeholder="Summary"></textarea>
+                        </div>
+                    </form>
+                </section>
+
+                <!--  -->
+                <section class="achievements-section">
+                    <h2>Achievements</h2>
+                    <form id="achievement-form">
+                        <div class="achievement">
+                            <div class="form-group">
+                                <label for="achievement-title-1">Title:</label>
+                                <input type="text" id="achievement-title-1" name="achievement-title[]"
+                                    placeholder="Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="achievement-description-1">Description:</label>
+                                <textarea id="achievement-description-1" name="achievement-description[]"
+                                    placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" id="add-achievement">+ Add Achievement</button>
+                    </form>
+                </section>
+
+                <!--  -->
+                <section class="experience-section">
+                    <h2>Experience</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="job-title">Title:</label>
+                            <input type="text" id="job-title" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company/Organization:</label>
+                            <input type="text" id="company" placeholder="Company/Organization">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <input type="text" id="location" placeholder="Location">
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date">Start Date:</label>
+                            <input type="date" id="start-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="end-date">End Date:</label>
+                            <input type="date" id="end-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            <textarea id="description" placeholder="Description"></textarea>
+                        </div>
+                        <button type="button" id="add-experience">+ Add Experience</button>
+                    </form>
+                </section>
+
+                <!--  -->
+                <section class="education-section">
+                    <h2>Education</h2>
+                    <form id="education-form">
+                        <div class="education">
+                            <div class="form-group">
+                                <label for="school">School:</label>
+                                <input type="text" id="school" name="school[]" placeholder="School">
+                            </div>
+                            <div class="form-group">
+                                <label for="degree">Degree:</label>
+                                <input type="text" id="degree" name="degree[]" placeholder="Degree">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="city[]" placeholder="City">
+                            </div>
+                            <div class="form-group">
+                                <label for="start-date">Start Date:</label>
+                                <input type="date" id="start-date" name="start-date[]">
+                            </div>
+                            <div class="form-group">
+                                <label for="end-date">End Date:</label>
+                                <input type="date" id="end-date" name="end-date[]">
+                            </div>
+                            <div class="form-group">
+                                <label for="education-description">Description:</label>
+                                <textarea id="education-description" name="education-description[]"
+                                    placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" id="add-education">+ Add Education</button>
+                    </form>
+                </section>
+
+                <!--  -->
+                <section class="projects-section">
+                    <h2>Projects</h2>
+                    <form id="project-form">
+                        <div class="project">
+                            <div class="form-group">
+                                <label for="project-name">Project Name:</label>
+                                <input type="text" id="project-name" name="project-name[]" placeholder="Project Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="project-link">Project Link:</label>
+                                <input type="text" id="project-link" name="project-link[]" placeholder="Project Link">
+                            </div>
+                            <div class="form-group">
+                                <label for="project-description">Description:</label>
+                                <textarea id="project-description" name="project-description[]"
+                                    placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" id="add-project">+ Add Project</button>
+                    </form>
+                </section>
+
+                <!--  -->
+                <section class="skills-section">
+                    <h2>Skills</h2>
+                    <form id="skills-form">
+                        <div class="form-group">
+                            <label for="skill">Skill:</label>
+                            <input type="text" id="skill" name="skill[]" placeholder="Skill">
+                        </div>
+                    </form>
+                    <button type="button" id="add-skill">+ Add Skill</button>
+                </section>
+
+
+
+
+                </section>
+            </div>
+            <!-- Resume Preview -->
+            <div class="main_right">
+                <h1 class="resumeheading">Resume</h1>
+                <div class="container">
+                    <!-- <img  id="image-upload" src="your_photo.jpg" alt="Your Photo"> -->
+                    <h1 class="nameenter"><span class="nameenter2"></span><span class="nameenter3"></span></h1>
+                    <p><strong>Designation: </strong><span class="designation"></span></p>
+
+                    <div class="section">
+                        <h2 class="section-title">Contact</h2>
+                        <ul class="section-content">
+                            <li><strong>Address: </strong> <span class="add">Your Address</span></li>
+                            <li><strong>Email: </strong> <span class="mail">youremail@example.com</span></li>
+                            <li><strong>Phone: </strong><span class="mobile">+1234567890</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Summary</h2>
+                        <p class="section-content-smry">Summary of your professional background and skills.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Achievements</h2>
+                        <p class="section-content-achiev">Description of your achievements.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="section-content">
+                            <p><strong>Title: </strong><span class="jobTitle">Your Job Title</span></p>
+                            <p><strong>Company: </strong><span class="companyName">Company Name</span></p>
+                            <p><strong>Location: </strong><span class="country">City, Country</span></p>
+                            <p><strong>Dates: </strong><span class="dates">Start Date</span> - <span class="dates1">End Date</span></p>
+                            <p><strong>Description: </strong><span class="jobDescription">Description of your responsibilities and achievements.</span></p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Education</h2>
+                        <div class="section-content">
+                            <p><strong>School: </strong><span class="schoolname">School Name</span></p>
+                            <p><strong>Degree: </strong><span class="degreename">Degree Name</span></p>
+                            <p><strong>City: </strong><span class="cityname">City, Country</span></p>
+                            <p><strong>Dates: </strong><span class="Edudates">Start Date - End Date</span></p>
+                            <p><strong>Description: </strong><span class="EduDescription">Description of your education.</span></p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Projects</h2>
+                        <div class="section-content">
+                            <p><strong>Project Name: </strong><span class="projectname">Project Name</span></p>
+                            <p><strong>Project Link: </strong><a href="https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/"><span class="projectLink">Project Link</span></a></p>
+                            <p><strong>Description: </strong><span class="ProjectDescription">Description of the project.</span></p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2 class="section-title">Skills</h2>
+                        <p class="section-content-skills">List of your skills.</p>
+                    </div>
+
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="window.print()">Print</button>
+                    <a class="button" id="downloadit">Download</a>
+                    <button class="button">Job Suggestions</button>
+                    <button class="button">Project Recommendations</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

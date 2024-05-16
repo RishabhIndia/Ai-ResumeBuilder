@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  /* background-color: rgb(211, 202, 202); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+.leftnav {
+  width: 20%;
+  padding: 20px 70px;
+}
+.leftnav h2 {
+  color: #424a5c;
+  font-size: 2rem;
+}
+span {
+  color: #45b84c;
+}
+.rightnav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.rightnav h3 {
+  font-weight: 600;
+}
+.firsttext {
+  color: #424a5c;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+.firsttext:hover {
+  color: #45b84c;
+  transition: background-color 0.5s ease;
+}
+.firsttext:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #45b84c;
+  transition: width 0.5s ease;
+}
+.secondtext {
+  color: #424a5c;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+.secondtext:hover {
+  color: #45b84c;
+  transition: background-color 0.5s ease;
+}
+.secondtext:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #45b84c;
+  transition: width 0.5s ease;
+}
+.thirdtext {
+  color: #424a5c;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+.thirdtext:hover {
+  color: #45b84c;
+  transition: background-color 0.5s ease;
+}
+.thirdtext:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #45b84c;
+  transition: width 0.5s ease;
+}
+.fourthtext {
+  padding: 10px 25px;
+  background-color: #45b84c;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.fourthtext:hover {
+  background-color: #34ca3e;
+  transition: background-color 0.3s ease;
+}
+.fifthtext {
+  padding: 10px 25px;
+  background-color: #424a5c;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.fifthtext:hover {
+  background-color: #727575;
+  transition: background-color 0.3s ease;
+}
+/* Nav completed & main section started */
+#firstsection {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 70px;
+  padding: 4% 0%;
+}
+h1 {
+  font-size: 3.4rem;
+  color: #3b4250;
+  line-height: 1.2;
+}
+.leftone {
+  width: 50%;
+  padding-left: 30px;
+}
+.leftone h5 {
+  padding: 40px 0px;
+  color: #6f6f72;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.leftone h4 {
+  background-color: #45b84c;
+  padding: 15px 40px;
+  width: 220px;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.leftone h4:hover {
+  background-color: #34ca3e;
+  transition: background-color 0.3s ease;
+}
+a {
+  text-decoration: none;
+}
+.rightone {
+  width: 50%;
+}
+.rightone img {
+  height: 380px;
+  width: 450px;
+  position: relative;
+  top: 0px;
+  left: 60px;
+}
+.resume-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  padding: 90px 90px;
+}
+
+.resume-template1 {
+  background-image: url('./HomePage_Image/temp1.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  border: 6px #34ca3e solid;
+}
+.resume-template1:hover {
+  transform: scale(1.05);
+}
+.resume-template2 {
+  background-image: url('./HomePage_Image/temp2.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  border: 6px #34ca3e solid;
+}
+.resume-template2:hover {
+  transform: scale(1.05);
+}
+.resume-template3 {
+  background-image: url('./HomePage_Image/temp3.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  border: 6px #34ca3e solid;
+}
+.resume-template3:hover {
+  transform: scale(1.05);
+}
+.resume-template4 {
+  background-image: url('./HomePage_Image/temp4.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  border: 6px #34ca3e solid;
+}
+.resume-template4:hover {
+  transform: scale(1.05);
+}
+.resume-template5 {
+  background-image: url('./HomePage_Image/temp5.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  border: 6px #34ca3e solid;
+}
+.resume-template5:hover {
+  transform: scale(1.05);
+}
+.resume-template6 {
+  background-image: url('./HomePage_Image/temp6.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust height as needed */
+  transition: transform 0.3s ease;
+  border: 6px #34ca3e solid;
+}
+.resume-template6:hover {
+  transform: scale(1.05);
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content,
+.footer-social {
+  flex: 1;
+  padding: 20px 90px;
+}
+
+.footer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer ul li a:hover {
+  color: #aaa;
+}
+
+/* FontAwesome Icons */
+.footer ul li a i {
+  margin-right: 10px;
+}
