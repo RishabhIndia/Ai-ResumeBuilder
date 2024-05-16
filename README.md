@@ -35,6 +35,7 @@ To set up the Resume Builder Website locally, follow these steps:
 bash
 Copy code
 git clone https://github.com/RishabhIndia/Ai-ResumeBuilder.git
+
 Navigate to the project directory:
 
 bash
