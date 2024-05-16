@@ -1,10 +1,10 @@
-Resume Builder Website - https://rishabhindia.github.io/Ai-ResumeBuilder/
+**Resume Builder Website** - https://rishabhindia.github.io/Ai-ResumeBuilder/
 
 **Overview**
 
 The Resume Builder Website is a user-friendly platform designed to streamline the process of creating professional resumes. It offers a range of features to assist users in crafting compelling resumes that effectively showcase their skills and experiences to potential employers.
 
-Features
+**Features**
 
 User-Friendly Interface: The website provides an intuitive interface that guides users through the resume building process step by step.
 
@@ -16,7 +16,7 @@ Live Preview: Users can preview their resumes in real-time as they make changes,
 
 Download and Print: Once the resume is complete, users can download it in PDF format or print it directly from the website.
 
-Screenshots
+**Screenshots**
 
 Home Page: 
 Resume Builder Interface: 
@@ -30,7 +30,7 @@ Installation
 
 To set up the Resume Builder Website locally, follow these steps:
 
-Clone the repository:
+**Clone the repository:**
 
 bash
 Copy code
@@ -52,15 +52,15 @@ npm start
 Access the website:
 Open your browser and navigate to http://localhost:3000 to access the Resume Builder Website.
 
-Contributing
+**Contributing**
 
 Contributions to the Resume Builder Website are welcome! If you have any feature requests, bug reports, or suggestions for improvements, please feel free to open an issue or submit a pull request on the GitHub repository.
 
-License
+**License**
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements
+**Acknowledgements**
 
 This README provides an overview of the Resume Builder Website, highlighting its features, technology stack, installation instructions, and contribution guidelines. It aims to provide users and contributors with essential information about the project.
 
