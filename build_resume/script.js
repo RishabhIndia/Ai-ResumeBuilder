@@ -6,12 +6,20 @@ fname.addEventListener("input", () => {
   rh1.innerText = fname.value;
 });
 
-// last name
-let Lname = document.querySelector("#last-name");
+// middle name
+let Mname = document.querySelector("#middle-name");
 let rh2 = document.querySelector(".nameenter3");
 
+Mname.addEventListener("input", () => {
+  rh2.innerText = Mname.value;
+});
+
+// last name
+let Lname = document.querySelector("#last-name");
+let rh3 = document.querySelector(".nameenter4");
+
 Lname.addEventListener("input", () => {
-  rh2.innerText = Lname.value;
+  rh3.innerText = Lname.value;
 });
 
 // designation
@@ -20,23 +28,6 @@ let rdesignation = document.querySelector(".designation");
 
 desgnt.addEventListener("input", () => {
   rdesignation.innerText = desgnt.value;
-});
-
-// uploadimg
-let uploadIMG = document.querySelector("#upload-image");
-let imagePreview = document.querySelector("#image-preview");
-
-uploadIMG.addEventListener("change", () => {
-  const file = uploadIMG.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function () {
-      imagePreview.src = reader.result;
-    };
-    reader.readAsDataURL(file);
-  } else {
-    imagePreview.src = "#"; // Clear the preview if no file is selected
-  }
 });
 
 // Address
@@ -163,13 +154,20 @@ city.addEventListener("input", () => {
 });
 
 // Start Date
-let startdate = document.querySelector("#start-date");
-let Sdate = "";
 
-startdate.addEventListener("input", (e) => {
-  Sdate = e.target.value;
-  edustartdate();
+let startdate = document.querySelector("#start-date");
+let rstartdate = document.querySelector(".dates");
+
+start.addEventListener("input", () => {
+  rstartdate.innerHTML = startdate.ariaValueText;
 });
+
+// let Sdate = "";
+
+// startdate.addEventListener("input", (e) => {
+//   Sdate = e.target.value;
+//   edustartdate();
+// });
  
 function edustartdate() {
   document.querySelector(".dates").innerText = Sdate;
@@ -228,15 +226,49 @@ skills.addEventListener("input", () => {
   rskills.innerText = skills.value;
 });
 
-// download buuton
-let down = document.querySelector("#downloadit");
-down.addEventListener("click", function () {
-  const R = document.querySelector(".container").innerText;
-  const pdf = new jsPDF();
-  pdf.text(20, 20, "Resume");
-  pdf.fromHTML(R, 20, 30);
-  pdf.save("resume.pdf");
+const print = document.querySelector(".printbutton");
+const download = document.querySelector("#downloadit");
+const Job_suggestion = document.querySelector(".jobbutton");
+const project_suggestion = document.querySelector(".projectbutton");
+
+// print container
+print.addEventListener("click", () => {
+  window.print(wrapper);
 });
+
+// download;
+download.addEventListener("click", generatePDF);
+
+function generatePDF() {
+  const element = document.getElementById("whole_container");
+  document.getElementById("wrapper").style.display = "block";
+  document.getElementById("wrapper").style.marginTop = "0px";
+  document.getElementById("wrapper").style.border = "1px solid black";
+  html2pdf().from(element).save("download.pdf");
+}
+
+function downloadCode() {
+  var x = document.getElementById("wrapper");
+  generatePDF();
+  setTimeout(function () {
+    window.location = window.location;
+  }, 3000);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Arya Kumar
 // 14:12

@@ -5,7 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
-  background-color: rgb(238, 231, 231);
+  background-color: rgb(218, 208, 208);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,16 +81,17 @@ main {
 }
 .main_left {
   width: 30%;
-  background-color: #D3D3D3;
+  /* background-color: #D3D3D3; */
   padding: 30px;
-  height: 100%;
-  overflow: scroll;
+  height: 100vh;
+  /* overflow-y: scroll;
+  overflow: scroll; */
 }
 .main_right {
   width: 70%;
-  max-height: 100vh;
-  overflow-y:scroll;
-  overflow-y: visible;
+  height: 100vh;
+  /* overflow-y: scroll;
+  overflow: scroll; */
 }
 .resumeheading{
   position: relative;
@@ -513,4 +514,13 @@ img {
 
 .section-content li {
   margin-bottom: 5px;
+}
+.buttonPrint, .buttondownload, .buttonjob, .buttonProject  {
+  padding: 10px 20px;
+  background-color: #16811d;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 20px;
+  border-radius: 15px;
+  cursor: pointer;
 }
